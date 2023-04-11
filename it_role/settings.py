@@ -81,10 +81,10 @@ WSGI_APPLICATION = 'it_role.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'myrole',
+        'NAME': 'myrole2',
         'USER': 'adminrole',
         'PASSWORD': 'adminadmin',
-        'HOST': 'myrole.c1eptls5lvgi.eu-north-1.rds.amazonaws.com',
+        'HOST': 'myrole2.c1eptls5lvgi.eu-north-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
