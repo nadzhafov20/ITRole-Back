@@ -12,4 +12,4 @@ class RoleSerializer(serializers.ModelSerializer):
 class QuestionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Question
-        fields = ('id', 'question','positive_choice', 'negative_choice' 'point', 'role')
+        fields = ('id', 'question','positive_choice', 'negative_choice', 'point', 'role')
