@@ -9,7 +9,7 @@ hooks:
       timeout: 300
       runas: root
   AfterInstall:
-    - location: /myroletests/cripts/configure_database.sh
+    - location: /myroletest/scripts/configure_database.sh
       timeout: 300
       runas: root
   ApplicationStart:
