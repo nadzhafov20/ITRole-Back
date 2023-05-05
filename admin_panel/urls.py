@@ -1,14 +1,15 @@
 from django.urls import path, include
 
-from rest_framework import routers
+from .views import (RoleListCreateAPIView, 
+                    RoleRetrieveUpdateDestroyAPIView, 
+                    QuestionListCreateAPIView, 
+                    QuestionRetrieveUpdateDestroyAPIView)
 
-from .views import RoleViewset, QuestionViewset
 
-
-router = routers.DefaultRouter()
-router.register(r'role',RoleViewset)
-router.register(r'question', QuestionViewset)
 
 urlpatterns = [
-    path('admin/', include(router.urls))
+    path('admin/role/', RoleListCreateAPIView.as_view()),
+    path('admin/role/<int:pk>/', RoleRetrieveUpdateDestroyAPIView.as_view()),
+    path('admin/question/', QuestionListCreateAPIView.as_view()),
+    path('admin/question/<int:pk>/', QuestionRetrieveUpdateDestroyAPIView.as_view()),
 ]
